@@ -6,7 +6,7 @@ and others), using distance-decay math instead of forced either/or
 classification.
 
 This README explains what's in this project and exactly how to run each
-piece, written for someone who isn't deeply technical yet.
+piece.
 
 ---
 
@@ -29,18 +29,14 @@ animal_archetype/
 └── README.md                    - this file
 ```
 
-Every file has extensive comments inside explaining what each part does
-and why - open any `.py` file in a text editor to read along.
-
 ---
 
 
-## Quickest way to try it: the front-end (no installation needed)
+## Quickest way to try it: the front-end
 
 Just open `frontend/index.html` in any web browser (double-click it).
 Move the sliders, click "Randomize," and watch the archetype match
-percentages and the radar chart update instantly. This runs entirely in
-your browser - no Python, no server, nothing to install.
+percentages and the radar chart update instantly.
 
 ---
 
@@ -106,7 +102,7 @@ this, plus experiments with different `beta` values.
 
 ---
 
-## How the math works (plain-language summary)
+## How the math works
 
 1. **Vector representation** - you (or any person) become a list of 18
    numbers, one per trait, each from 0-100.
@@ -123,7 +119,7 @@ this, plus experiments with different `beta` values.
 
 Because every archetype is scored independently (not forced to add up to
 100% across archetypes), you can genuinely be "88% Wolf AND 85% Octopus"
-at the same time - which is the whole point of a possibilistic model
+at the same time - which to is the whole point of a possibilistic model
 versus a traditional either/or classifier.
 
 ---
